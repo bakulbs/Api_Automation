@@ -1,0 +1,69 @@
+2024-10-04 14:52:45,262 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 14:52:46,986 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:52:46,986 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:52:46,986 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 14:52:46,986 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:52:46,987 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:52:46,987 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:52:46,988 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"Updated Title","description":"Updated Description","pageCount":300,"excerpt":"Updated Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:52:48,237 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:52:48,253 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "Updated Title",
+    "description": "Updated Description",
+    "pageCount": 300,
+    "excerpt": "Updated Excerpt",
+    "publishDate": "2024-10-04T05:30:05.154Z"
+}
+2024-10-04 14:52:48,256 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Book updated successfully
+2024-10-04 14:52:48,542 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:52:48,542 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:52:48,542 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/-1
+2024-10-04 14:52:48,542 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:52:48,542 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:52:48,543 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:52:48,543 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":-1,"title":"Invalid Title","description":"Description","pageCount":300,"excerpt":"Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:52:49,013 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:52:49,039 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": -1,
+    "title": "Invalid Title",
+    "description": "Description",
+    "pageCount": 300,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-04T05:30:05.154Z"
+}
+2024-10-04 14:52:49,040 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Book not found
+2024-10-04 14:52:49,324 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:52:49,325 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"AAAAAAAAAAAA","description":"BBBBBBBBBBBB","pageCount":300,"excerpt":"Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:52:49,803 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:52:49,804 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "AAAAAAAAAAAA",
+    "description": "BBBBBBBBBBBB",
+    "pageCount": 300,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-04T05:30:05.154Z"
+}
+2024-10-04 14:52:49,805 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Book updated successfully with max length fields
+2024-10-04 14:52:50,087 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:52:50,087 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:52:50,087 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 14:52:50,089 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:52:50,089 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:52:50,089 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:52:50,089 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"Existing Title","description":"Existing Description","pageCount":300,"excerpt":"Existing Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:52:50,579 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:52:50,580 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "Existing Title",
+    "description": "Existing Description",
+    "pageCount": 300,
+    "excerpt": "Existing Excerpt",
+    "publishDate": "2024-10-04T05:30:05.154Z"
+}
+2024-10-04 14:52:50,580 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - No changes made

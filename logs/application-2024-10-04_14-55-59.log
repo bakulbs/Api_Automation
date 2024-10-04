@@ -1,0 +1,46 @@
+2024-10-04 14:56:00,044 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 14:56:01,633 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:56:01,633 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 14:56:01,633 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/1
+2024-10-04 14:56:01,633 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:56:01,633 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:56:01,634 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:56:02,763 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2024-10-04 14:56:02,770 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:56:02,773 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Author deleted successfully
+2024-10-04 14:56:03,056 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:56:03,056 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 14:56:03,056 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/1
+2024-10-04 14:56:03,056 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:56:03,056 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:56:03,057 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:56:03,540 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2024-10-04 14:56:03,540 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:56:03,541 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Author deleted successfully
+2024-10-04 14:56:03,541 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:56:03,541 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 14:56:03,542 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/1
+2024-10-04 14:56:03,542 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:56:03,542 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:56:03,542 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:56:04,012 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2024-10-04 14:56:04,012 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:56:04,013 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Author does not exist
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/-1
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:56:04,292 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:56:04,777 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2024-10-04 14:56:04,777 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:56:04,778 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Bad Request: Invalid author ID
+2024-10-04 14:56:05,056 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:56:05,057 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 14:56:05,057 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/999
+2024-10-04 14:56:05,057 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:56:05,057 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:56:05,057 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:56:05,523 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2024-10-04 14:56:05,523 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:56:05,523 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Author does not exist

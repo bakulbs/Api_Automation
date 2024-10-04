@@ -2,7 +2,7 @@
 <suite name="MyTestSuite">
     <test name="MyTest">
         <classes>
-            <class name="com.nagpassignment.RestAssuredNAGP.ApiTest.PutAuthorTest">
+            <class name="com.nagpassignment.RestAssuredNAGP.ApiTest.DeleteBooksTest">
             </class>
 
         </classes>

@@ -15,8 +15,8 @@ public class AuthorAPIObject extends BaseAPIObject {
     public static final String GET_BYID_BOOKING = "api/v1/Authors/{id}";
     public static final String GET_BOOKING_BY_BOOK_ID = "api/v1/Authors/authors/books/{id}";
     public static final String POST_AUTHORS=  "api/v1/Authors";
-    public static final String UPDATE_AUTHORS = "api/v1/Authors/authors/books/{id}";
-public static final String DELETE_AUTHORS = "api/v1/Authors/authors/books/{id}";
+    public static final String UPDATE_AUTHORS = "api/v1/Authors";
+public static final String DELETE_AUTHORS = "api/v1/Authors/authors/books";
     /**
      * Retrieves a list of all booking IDs.
      *

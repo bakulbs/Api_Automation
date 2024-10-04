@@ -1,0 +1,41 @@
+2024-10-04 14:40:04,863 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 14:40:06,463 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:40:06,464 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:40:06,464 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-04 14:40:06,464 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:40:06,464 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:40:06,465 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1}
+2024-10-04 14:40:06,465 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"idBook":23,"firstName":"Updated FirstName","lastName":"Updated LastName"}
+2024-10-04 14:40:07,706 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-04 14:40:07,710 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:40:07,713 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Author updated successfully
+2024-10-04 14:40:08,005 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:40:08,005 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:40:08,006 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/-1
+2024-10-04 14:40:08,006 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:40:08,006 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:40:08,006 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=-1}
+2024-10-04 14:40:08,006 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":-1,"idBook":0,"firstName":"Invalid FirstName","lastName":"Invalid LastName"}
+2024-10-04 14:40:08,470 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-04 14:40:08,470 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:40:08,470 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Invalid author ID should return 400 Bad Request
+2024-10-04 14:40:08,770 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:40:08,771 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:40:08,771 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-04 14:40:08,771 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:40:08,771 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:40:08,772 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1}
+2024-10-04 14:40:08,772 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"idBook":6,"firstName":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","lastName":"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"}
+2024-10-04 14:40:09,258 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-04 14:40:09,258 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:40:09,259 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Author updated with max length fields
+2024-10-04 14:40:09,542 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:40:09,543 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:40:09,543 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-04 14:40:09,543 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:40:09,543 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:40:09,543 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1}
+2024-10-04 14:40:09,544 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"idBook":9,"firstName":"Existing FirstName","lastName":"Existing LastName"}
+2024-10-04 14:40:10,017 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-04 14:40:10,017 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 14:40:10,017 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - No changes made to the author

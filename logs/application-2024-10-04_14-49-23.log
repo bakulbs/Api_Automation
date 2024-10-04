@@ -1,0 +1,29 @@
+2024-10-04 14:49:24,277 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 14:49:25,845 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:49:25,846 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:49:25,846 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-04 14:49:25,846 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:49:25,846 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:49:25,846 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:49:25,847 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"Updated Title","description":"Updated Description","pageCount":300,"excerpt":"Updated Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:49:26,612 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:49:26,613 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:49:26,613 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-04 14:49:26,613 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:49:26,614 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:49:26,614 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:49:26,614 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":-1,"title":"Invalid Title","description":"Description","pageCount":300,"excerpt":"Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:49:26,902 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:49:26,903 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"AAAAAAAAAAAA","description":"BBBBBBBBBBBB","pageCount":300,"excerpt":"Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:49:27,187 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"Existing Title","description":"Existing Description","pageCount":300,"excerpt":"Existing Excerpt","publishDate":"2024-10-04T05:30:05.154Z"}

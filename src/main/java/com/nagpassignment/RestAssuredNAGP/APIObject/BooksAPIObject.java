@@ -14,8 +14,8 @@ public class BooksAPIObject extends BaseAPIObject {
     public static final String GET_BYID_BOOKS = "api/v1/Books/{id}";
     public static final String GET_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
 public static final String POST_BOOKS_BY_BOOK_NAME = "api/v1/Books";
-public static final String POST_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
-public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
+public static final String POST_BOOKS_BY_BOOK_ID = "api/v1/Books";
+public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books";
     /**
      * Retrieves a list of all book IDs.
      *
@@ -55,7 +55,7 @@ public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
         bookPOJO.setExcerpt(excerpt);
         bookPOJO.setPublishDate(publishDate);
         restParameter.setHeader("Content-type", "application/json");
-        Response response = put(POST_BOOKS_BY_BOOK_ID, restParameter, objectMapper.writeValueAsString(bookPOJO));
+        Response response = put(POST_BOOKS_BY_BOOK_ID + "/" + id, restParameter, objectMapper.writeValueAsString(bookPOJO));
         return response;
     }
     public Response deleteBook(int id, BaseRestParameter restParameter) throws Exception {

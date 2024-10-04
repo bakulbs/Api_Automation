@@ -32,7 +32,7 @@ public class PutAuthorTest extends BaseAPITest {
 
     @Test()
     public void updateAuthorWithInvalidId() throws Exception {
-        Response response = authorAPIObject.updateAuthor(-1,0 ,"Invalid FirstName", "Invalid LastName", restParameter);
+        Response response = authorAPIObject.updateAuthor(10001,0 ,"Invalid FirstName", "Invalid LastName", restParameter);
         assertionUtil.verifyResult(extentTest, response.getStatusCode(), 400, "Invalid author ID should return 400 Bad Request");
     }
 
