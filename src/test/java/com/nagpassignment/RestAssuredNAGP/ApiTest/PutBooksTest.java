@@ -14,7 +14,7 @@ import static org.testng.Assert.assertFalse;
 public class PutBooksTest extends BaseAPITest {
     private AssertionUtil assertionUtil = new AssertionUtil();
     BooksAPIObject booksAPIObject = new BooksAPIObject();
-    CreateBookingAPIObject createBookingAPIObject = new CreateBookingAPIObject();
+
 
 
     @Test()

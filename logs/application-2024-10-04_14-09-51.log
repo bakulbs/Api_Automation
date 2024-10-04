@@ -1,0 +1,86 @@
+2024-10-04 14:09:51,916 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 14:09:53,464 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:09:53,464 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-04 14:09:53,464 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-04 14:09:53,464 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:09:53,464 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:09:53,465 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:09:53,465 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"The Great Gatsby","description":"A classic novel.","pageCount":180,"excerpt":"An excerpt here.","publishDate":"2024-10-03T14:20:09.873Z"}
+2024-10-04 14:09:54,592 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:09:54,608 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "description": "A classic novel.",
+    "pageCount": 180,
+    "excerpt": "An excerpt here.",
+    "publishDate": "2024-10-03T14:20:09.873Z"
+}
+2024-10-04 14:09:54,610 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Book created successfully
+2024-10-04 14:09:54,889 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:09:54,889 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-04 14:09:54,889 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-04 14:09:54,890 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:09:54,890 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:09:54,890 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:09:54,890 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":3,"title":"Valid Title","description":"Description","pageCount":-5,"excerpt":"Excerpt","publishDate":"2024-10-03T14:20:09.873Z"}
+2024-10-04 14:09:55,360 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:09:55,360 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 3,
+    "title": "Valid Title",
+    "description": "Description",
+    "pageCount": -5,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-03T14:20:09.873Z"
+}
+2024-10-04 14:09:55,362 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Bad Request: Invalid page count
+2024-10-04 14:09:55,641 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:09:55,641 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-04 14:09:55,642 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-04 14:09:55,642 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:09:55,642 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:09:55,642 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:09:55,642 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":4,"title":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","description":"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB","pageCount":300,"excerpt":"Excerpt","publishDate":"2024-10-03T14:20:09.873Z"}
+2024-10-04 14:09:56,106 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:09:56,108 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 4,
+    "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "description": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "pageCount": 300,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-03T14:20:09.873Z"
+}
+2024-10-04 14:09:56,108 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Book created successfully with max length fields
+2024-10-04 14:09:56,383 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:09:56,384 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":2,"title":null,"description":"Description","pageCount":250,"excerpt":"Excerpt","publishDate":"2024-10-03T14:20:09.873Z"}
+2024-10-04 14:09:56,842 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:09:56,842 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 2,
+    "title": null,
+    "description": "Description",
+    "pageCount": 250,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-03T14:20:09.873Z"
+}
+2024-10-04 14:09:56,843 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Bad Request: Missing title
+2024-10-04 14:09:57,122 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 14:09:57,122 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-04 14:09:57,122 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-04 14:09:57,122 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 14:09:57,123 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 14:09:57,123 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 14:09:57,123 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1,"title":"Duplicate Title","description":"Description","pageCount":180,"excerpt":"Excerpt","publishDate":"2024-10-03T14:20:09.873Z"}
+2024-10-04 14:09:57,600 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 14:09:57,615 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "Duplicate Title",
+    "description": "Description",
+    "pageCount": 180,
+    "excerpt": "Excerpt",
+    "publishDate": "2024-10-03T14:20:09.873Z"
+}
+2024-10-04 14:09:57,616 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Conflict: Book with this ID already exists

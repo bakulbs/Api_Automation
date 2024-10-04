@@ -55,33 +55,25 @@ public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
         bookPOJO.setExcerpt(excerpt);
         bookPOJO.setPublishDate(publishDate);
         restParameter.setHeader("Content-type", "application/json");
-
-        // Step 1: Make a PUT request to update the book
         Response response = put(POST_BOOKS_BY_BOOK_ID, restParameter, objectMapper.writeValueAsString(bookPOJO));
-
-        // Step 2: Return the response for further validation if needed
         return response;
     }
     public Response deleteBook(int id, BaseRestParameter restParameter) throws Exception {
         restParameter.setHeader("Content-type", "application/json");
 
-        // Step 1: Make a DELETE request to remove the book by its ID
         Response response = delete(DELETE_BOOKS_BY_BOOK_ID + "/" + id, restParameter);
 
-        // Step 2: Return the response for further validation if needed
         return response;
     }
 
 
 
     public Response getBookByIdWithoutAuth(String bookingId, BaseRestParameter restParameter) throws Exception {
-        // Set the required headers for the request
+
         restParameter.setHeader("Content-type", "application/json");
 
-        // Set the booking ID in the path parameters
         restParameter.setPath("id", bookingId);
 
-        // Call the API endpoint to retrieve the booking details without authentication
         return get(GET_BOOKS_BY_BOOK_ID, restParameter);
     }
     public List<String> getByBookId(BaseRestParameter restParameter) throws Exception {
@@ -110,13 +102,13 @@ public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books/{id}";
         return get(GET_BOOKS_BY_BOOK_ID, restParameter);
     }
     public Response getBooksByIdWithoutAuth(String bookingId, BaseRestParameter restParameter) throws Exception {
-        // Set the required headers for the request
+
         restParameter.setHeader("Content-type", "application/json");
 
-        // Set the booking ID in the path parameters
+
         restParameter.setPath("id", bookingId);
 
-        // Call the API endpoint to retrieve the booking details without authentication
+
         return get(GET_BYID_BOOKS, restParameter);
     }
 }

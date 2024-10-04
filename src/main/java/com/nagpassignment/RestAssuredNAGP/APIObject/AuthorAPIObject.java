@@ -42,10 +42,7 @@ public static final String DELETE_AUTHORS = "api/v1/Authors/authors/books/{id}";
         authorPOJO.setIdBook(idBook);
         authorPOJO.setFirstName(firstName);
         authorPOJO.setLastName(lastName);
-
         restParameter.setHeader("Content-type", "application/json");
-
-        // Make a POST request to add the new author
         return post(POST_AUTHORS, restParameter, objectMapper.writeValueAsString(authorPOJO));
 
     }
@@ -61,11 +58,7 @@ public static final String DELETE_AUTHORS = "api/v1/Authors/authors/books/{id}";
 
     public Response deleteAuthor(int id, BaseRestParameter restParameter) throws Exception {
         restParameter.setHeader("Content-type", "application/json");
-
-        // Make a DELETE request to remove the author by their ID
         Response response = delete(DELETE_AUTHORS + "/" + id, restParameter);
-
-        // Return the response for further validation if needed
         return response;
     }
 
@@ -89,13 +82,9 @@ public static final String DELETE_AUTHORS = "api/v1/Authors/authors/books/{id}";
         return get(GET_BOOKING_BY_BOOK_ID, restParameter);
     }
     public Response getBookingByIdWithoutAuth(String bookingId, BaseRestParameter restParameter) throws Exception {
-        // Set the required headers for the request
+
         restParameter.setHeader("Content-type", "application/json");
-
-        // Set the booking ID in the path parameters
         restParameter.setPath("id", bookingId);
-
-        // Call the API endpoint to retrieve the booking details without authentication
         return get(GET_BYID_BOOKING, restParameter);
     }
 }

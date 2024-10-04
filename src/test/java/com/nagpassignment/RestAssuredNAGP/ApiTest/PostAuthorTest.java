@@ -22,7 +22,7 @@ import static org.testng.Assert.assertFalse;
 public class PostAuthorTest extends BaseAPITest {
     private AssertionUtil assertionUtil = new AssertionUtil();
     AuthorAPIObject authorsAPIObject = new AuthorAPIObject();
-    CreateBookingAPIObject createBookingAPIObject = new CreateBookingAPIObject();
+
     @Test()
     public void addAuthorSuccessfully() throws Exception {
         Response response = authorsAPIObject.addAuthor(1, 101, "John", "Doe", restParameter);

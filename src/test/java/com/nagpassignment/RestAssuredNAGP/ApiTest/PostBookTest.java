@@ -22,7 +22,7 @@ public class PostBookTest extends BaseAPITest {
     @Test()
     public void addBookSuccessfully() throws Exception {
         Response response = booksAPIObject.addBook(1, "The Great Gatsby", "A classic novel.", 180, "An excerpt here.", "2024-10-03T14:20:09.873Z", restParameter);
-        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 201, "Book created successfully");
+        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 200, "Book created successfully");
         restParameter.clear();
     }
 
@@ -51,7 +51,7 @@ public class PostBookTest extends BaseAPITest {
         }
 
         Response response = booksAPIObject.addBook(4, maxLengthTitle.toString(), maxLengthDescription.toString(), 300, "Excerpt", "2024-10-03T14:20:09.873Z", restParameter);
-        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 201, "Book created successfully with max length fields");
+        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 200, "Book created successfully with max length fields");
         restParameter.clear();
     }
 

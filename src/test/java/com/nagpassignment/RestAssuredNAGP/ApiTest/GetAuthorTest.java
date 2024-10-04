@@ -13,13 +13,13 @@ import io.restassured.response.Response;
 public class GetAuthorTest extends BaseAPITest{
 	private AssertionUtil assertionUtil = new AssertionUtil();
 	AuthorAPIObject getBookingAPIObject = new AuthorAPIObject();
-	CreateBookingAPIObject createBookingAPIObject = new CreateBookingAPIObject();
+
 		
 	
 	@Test()
 	public void VerifyErrorWithInvalidBookingId() throws Exception {
 		reporterUtil.reportStep(extentTest, " Step - Create booking with invalid booking ID and verify the error");
-		Response response = getBookingAPIObject.getBookingById("109",restParameter);
+		Response response = getBookingAPIObject.getBookingById("6000",restParameter);
 		assertionUtil.verifyResult(extentTest,response.getStatusCode() , 404 , "Verify error is returned for invalid booking ID");
 		restParameter.clear();
 	}
@@ -63,11 +63,11 @@ public class GetAuthorTest extends BaseAPITest{
 	}
 
 
-	
 
-	
 
-	
-	
+
+
+
+
 
 }
