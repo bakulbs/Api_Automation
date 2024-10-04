@@ -1,0 +1,46 @@
+2024-10-03 13:33:29,863 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 13:33:31,464 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2024-10-03 13:33:31,464 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:33:31,464 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:33:31,464 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:33:31,464 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:33:31,465 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:33:31,465 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=109}
+2024-10-03 13:33:33,448 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 13:33:33,485 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-21be92cf84deec4c90cd85cb1974034f-2b6895d7be0c3549-00"
+}
+2024-10-03 13:33:33,487 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify error is returned for invalid booking ID
+2024-10-03 13:33:33,764 INFO  [main] c.n.R.B.BaseAPITest - Step - Attempt to retrieve booking without authentication and verify the error
+2024-10-03 13:33:33,764 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:33:33,765 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:33:33,765 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:33:33,765 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:33:33,765 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:33:33,765 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=100}
+2024-10-03 13:33:34,234 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 13:33:34,242 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-a6ea2bf9610b2d48b4905c78b115d17f-88dc37cb37d05642-00"
+}
+2024-10-03 13:33:34,243 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Verify that an error is returned for unauthorized access
+2024-10-03 13:33:34,521 INFO  [main] c.n.R.B.BaseAPITest - Step - Attempt to retrieve booking with a valid booking ID and verify the response
+2024-10-03 13:33:34,521 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:33:34,521 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:33:34,521 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:33:34,522 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:33:34,522 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:33:34,522 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=12}
+2024-10-03 13:33:34,992 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 13:33:34,993 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 12,
+    "title": "Activity 12",
+    "dueDate": "2024-10-03T20:03:34.9136976+00:00",
+    "completed": true
+}
+2024-10-03 13:33:34,993 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify that booking is retrieved successfully

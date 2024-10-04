@@ -1,0 +1,119 @@
+2023-09-11 18:04:14,303 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 18:04:19,587 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:19,588 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 18:04:19,588 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 18:04:19,588 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=7fa2ddd6d1a62b4, Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:19,588 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:19,623 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234678}
+2023-09-11 18:04:19,623 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}
+2023-09-11 18:04:21,317 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2023-09-11 18:04:21,318 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Method Not Allowed
+2023-09-11 18:04:21,322 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 405
+2023-09-11 18:04:22,314 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:22,315 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 18:04:22,315 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 18:04:22,316 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:22,316 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:22,316 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 18:04:22,317 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 18:04:23,799 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 18:04:23,803 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 1262,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 18:04:25,460 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:25,460 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PATCH
+2023-09-11 18:04:25,460 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 18:04:25,460 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=4cf6a6c71a7fbb9, Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:25,461 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:25,461 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1262}
+2023-09-11 18:04:25,461 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Edit","lastname":"Sharma"}
+2023-09-11 18:04:27,180 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 18:04:27,184 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "firstname": "Edit",
+    "lastname": "Sharma",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Lunch"
+}
+2023-09-11 18:04:27,184 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 200
+2023-09-11 18:04:27,205 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct first name in response
+2023-09-11 18:04:27,223 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - 
+2023-09-11 18:04:27,234 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct additional needs in response
+2023-09-11 18:04:27,245 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct total price in response
+2023-09-11 18:04:27,257 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct deposit paid in response
+2023-09-11 18:04:27,270 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct checkin date in response
+2023-09-11 18:04:27,280 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct checkout date in response
+2023-09-11 18:04:28,205 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 18:04:28,206 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 18:04:29,841 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 18:04:29,843 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 1313,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 18:04:31,593 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:31,594 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 18:04:31,594 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 18:04:31,594 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=9c588786c59daf9, Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:31,594 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:31,595 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1313}
+2023-09-11 18:04:31,595 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Edit","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}
+2023-09-11 18:04:33,192 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 18:04:33,195 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "firstname": "Edit",
+    "lastname": "Sharma",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Breakfast"
+}
+2023-09-11 18:04:33,196 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 200
+2023-09-11 18:04:33,211 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct first name in response
+2023-09-11 18:04:33,222 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - 
+2023-09-11 18:04:33,232 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct additional needs in response
+2023-09-11 18:04:33,244 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct total price in response
+2023-09-11 18:04:33,252 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct deposit paid in response
+2023-09-11 18:04:33,260 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct checkin date in response
+2023-09-11 18:04:33,270 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify correct checkout date in response
+2023-09-11 18:04:34,248 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 18:04:34,249 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 18:04:34,249 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 18:04:34,250 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 18:04:34,250 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 18:04:34,251 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234}
+2023-09-11 18:04:34,251 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}
+2023-09-11 18:04:35,882 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 403
+2023-09-11 18:04:35,884 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Forbidden
+2023-09-11 18:04:35,884 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 403

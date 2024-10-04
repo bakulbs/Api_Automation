@@ -1,0 +1,29 @@
+2024-10-03 22:46:55,046 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 22:46:56,813 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:46:56,814 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-03 22:46:56,814 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-03 22:46:56,814 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:46:56,814 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:46:56,815 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:46:56,815 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstName":"Savy","lastName":"sdd","id":1,"idBook":0}
+2024-10-03 22:46:57,859 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:46:57,859 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-03 22:46:57,860 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-03 22:46:57,860 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:46:57,860 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:46:57,861 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:46:57,861 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstName":"bakul","lastName":"Bhardwaj","id":1,"idBook":0}
+2024-10-03 22:46:58,159 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:46:58,159 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-03 22:46:58,161 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-03 22:46:58,161 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:46:58,161 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:46:58,161 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:46:58,161 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstName":"Dau","lastName":"Far","id":1,"idBook":0}
+2024-10-03 22:46:58,464 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:46:58,464 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2024-10-03 22:46:58,465 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/authors/books/{id}/1
+2024-10-03 22:46:58,465 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:46:58,466 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:46:58,466 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:46:58,466 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstName":"Das","lastName":"Far","id":1,"idBook":0}

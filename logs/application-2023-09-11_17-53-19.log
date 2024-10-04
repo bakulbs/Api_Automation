@@ -1,0 +1,24 @@
+2023-09-11 17:53:19,891 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 17:53:21,829 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2023-09-11 17:53:21,829 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:53:21,829 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2023-09-11 17:53:21,829 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 17:53:21,830 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json}
+2023-09-11 17:53:21,830 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:53:21,832 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=123456}
+2023-09-11 17:53:24,726 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking and fetch that booking using get all api
+2023-09-11 17:53:24,824 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:53:24,824 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:53:24,824 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:53:24,824 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json}
+2023-09-11 17:53:24,825 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:53:24,825 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=123456}
+2023-09-11 17:53:24,825 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 17:53:25,181 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking and fetch that booking using get by Id api
+2023-09-11 17:53:25,186 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:53:25,187 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:53:25,187 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:53:25,188 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json}
+2023-09-11 17:53:25,189 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:53:25,189 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=123456}
+2023-09-11 17:53:25,190 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}

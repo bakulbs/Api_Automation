@@ -1,0 +1,31 @@
+2024-10-03 12:38:07,693 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 12:38:09,246 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2024-10-03 12:38:09,247 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 12:38:09,247 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 12:38:09,247 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 12:38:09,247 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 12:38:09,247 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 12:38:09,248 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=109}
+2024-10-03 12:38:10,396 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 12:38:10,430 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-ebabf74a8c57804bb3811e5fc7707d08-bf6680e80b57f048-00"
+}
+2024-10-03 12:38:10,432 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify error is returned for invalid booking ID
+2024-10-03 12:38:10,718 INFO  [main] c.n.R.B.BaseAPITest - Step - Attempt to retrieve booking with a valid booking ID and verify the response
+2024-10-03 12:38:10,718 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 12:38:10,718 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 12:38:10,719 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 12:38:10,719 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 12:38:10,719 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 12:38:10,719 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=12}
+2024-10-03 12:38:11,314 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 12:38:11,316 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 12,
+    "title": "Activity 12",
+    "dueDate": "2024-10-03T19:08:11.1735734+00:00",
+    "completed": true
+}
+2024-10-03 12:38:11,317 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify that booking is retrieved successfully

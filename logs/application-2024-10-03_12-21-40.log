@@ -1,0 +1,16 @@
+2024-10-03 12:21:41,555 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 12:21:43,120 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 12:21:43,121 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=123456}
+2024-10-03 12:21:44,313 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 12:21:44,355 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-13279fdb58203d42a7f7ffc44d61fbbc-4b70fe18d3d53d4c-00"
+}
+2024-10-03 12:21:44,356 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify Booking created sucessfully

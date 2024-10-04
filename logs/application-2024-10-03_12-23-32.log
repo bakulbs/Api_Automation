@@ -1,0 +1,16 @@
+2024-10-03 12:23:32,667 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 12:23:34,277 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2024-10-03 12:23:34,277 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 12:23:34,277 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 12:23:34,278 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 12:23:34,278 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 12:23:34,278 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 12:23:34,279 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1}
+2024-10-03 12:23:35,473 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 12:23:35,512 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "Activity 1",
+    "dueDate": "2024-10-03T07:53:35.3772308+00:00",
+    "completed": false
+}
+2024-10-03 12:23:35,514 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Verify Booking created sucessfully

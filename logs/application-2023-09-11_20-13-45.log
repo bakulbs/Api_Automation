@@ -1,0 +1,7 @@
+2023-09-11 20:13:45,967 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 20:13:48,388 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:13:48,389 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2023-09-11 20:13:48,389 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 20:13:48,390 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-Type=application/json}
+2023-09-11 20:13:48,390 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:13:48,390 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234}

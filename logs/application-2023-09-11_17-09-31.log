@@ -1,0 +1,41 @@
+2023-09-11 17:09:32,259 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 17:09:34,138 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:09:34,139 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:09:34,139 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:09:34,139 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-Type=application/json}
+2023-09-11 17:09:34,139 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:09:34,139 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 17:09:34,176 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 17:09:37,097 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 17:09:37,121 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 3993,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 17:09:38,166 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:09:38,167 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:09:38,167 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:09:38,168 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-Type=application/json}
+2023-09-11 17:09:38,168 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:09:38,169 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 17:09:38,170 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkout":"2019-01-01"}}
+2023-09-11 17:09:39,804 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 500
+2023-09-11 17:09:39,805 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Internal Server Error
+2023-09-11 17:09:40,213 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:09:40,213 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:09:40,214 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:09:40,215 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-Type=application/json}
+2023-09-11 17:09:40,215 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:09:40,216 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 17:09:40,216 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2019-01-01","checkout":"2019-01-01"}}
+2023-09-11 17:09:42,054 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 500
+2023-09-11 17:09:42,055 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Internal Server Error

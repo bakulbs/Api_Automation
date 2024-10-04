@@ -1,0 +1,73 @@
+2024-10-03 22:42:54,314 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 22:42:56,012 INFO  [main] c.n.R.B.BaseAPITest - Add a book with an empty optional field (description)
+2024-10-03 22:42:56,065 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:42:56,066 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 22:42:56,066 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-03 22:42:56,066 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:42:56,067 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:42:56,067 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:42:56,067 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":20,"idBook":10,"firstName":"Sagar","lastName":"Dua","title":null,"isbn":null,"author":null}
+2024-10-03 22:42:57,443 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 22:42:57,469 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 20,
+    "title": null,
+    "description": null,
+    "pageCount": 0,
+    "excerpt": null,
+    "publishDate": "0001-01-01T00:00:00"
+}
+2024-10-03 22:42:57,472 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify that the book was created successfully with an empty description
+2024-10-03 22:42:57,752 INFO  [main] c.n.R.B.BaseAPITest - Attempt to add a book with an already existing ISBN
+2024-10-03 22:42:57,753 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:42:57,754 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 22:42:57,754 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-03 22:42:57,754 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:42:57,755 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:42:57,755 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:42:57,755 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":11,"idBook":1,"firstName":"Ashmi","lastName":"Rani","title":null,"isbn":null,"author":null}
+2024-10-03 22:42:58,245 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 22:42:58,247 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 11,
+    "title": null,
+    "description": null,
+    "pageCount": 0,
+    "excerpt": null,
+    "publishDate": "0001-01-01T00:00:00"
+}
+2024-10-03 22:42:58,248 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Verify that a 409 Conflict is returned for an existing ISBN
+2024-10-03 22:42:58,529 INFO  [main] c.n.R.B.BaseAPITest - Attempt to add a book with missing required fields (ISBN)
+2024-10-03 22:42:58,530 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:42:58,530 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 22:42:58,531 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-03 22:42:58,531 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:42:58,531 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:42:58,532 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:42:58,532 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1000,"idBook":10000,"firstName":"Saurav","lastName":"Pal","title":null,"isbn":null,"author":null}
+2024-10-03 22:42:59,362 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 22:42:59,364 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1000,
+    "title": null,
+    "description": null,
+    "pageCount": 0,
+    "excerpt": null,
+    "publishDate": "0001-01-01T00:00:00"
+}
+2024-10-03 22:42:59,364 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Verify that a 400 Bad Request is returned for missing required fields
+2024-10-03 22:42:59,642 INFO  [main] c.n.R.B.BaseAPITest - Add a new book with all required fields
+2024-10-03 22:42:59,643 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:42:59,643 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 22:42:59,644 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books
+2024-10-03 22:42:59,644 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:42:59,645 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:42:59,645 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:42:59,645 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"id":1002,"idBook":100,"firstName":"Bakul","lastName":"Bhardwaj","title":null,"isbn":null,"author":null}
+2024-10-03 22:43:00,125 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 22:43:00,126 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1002,
+    "title": null,
+    "description": null,
+    "pageCount": 0,
+    "excerpt": null,
+    "publishDate": "0001-01-01T00:00:00"
+}
+2024-10-03 22:43:00,127 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify that the book was created successfully

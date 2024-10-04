@@ -1,0 +1,25 @@
+2024-10-03 22:56:55,236 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 22:56:57,028 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:56:57,028 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-03 22:56:57,028 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}/12
+2024-10-03 22:56:57,029 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:56:57,029 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:56:57,029 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:56:57,878 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:56:57,879 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-03 22:56:57,879 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}/200
+2024-10-03 22:56:57,879 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:56:57,880 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:56:57,880 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:56:58,175 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:56:58,175 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-03 22:56:58,175 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}/14
+2024-10-03 22:56:58,176 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:56:58,176 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:56:58,176 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 22:56:58,471 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 22:56:58,472 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-03 22:56:58,472 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}/67
+2024-10-03 22:56:58,472 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 22:56:58,472 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 22:56:58,473 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}

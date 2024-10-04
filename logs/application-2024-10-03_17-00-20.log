@@ -1,0 +1,33 @@
+2024-10-03 17:00:21,013 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 17:00:22,576 INFO  [main] c.n.R.B.BaseAPITest - Create a book entry with invalid id and validate the error
+2024-10-03 17:00:22,577 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 17:00:22,577 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 17:00:22,577 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-03 17:00:22,577 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 17:00:22,578 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 17:00:22,578 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1003}
+2024-10-03 17:00:23,661 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 17:00:23,697 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-4a5089d02ee64745b1cb6968ef28e58c-949a0bee7190144b-00"
+}
+2024-10-03 17:00:23,699 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify a valid error message for invaid boking ID
+2024-10-03 17:00:23,983 INFO  [main] c.n.R.B.BaseAPITest - Create a book entry with valid id and validate
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 17:00:23,984 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=100}
+2024-10-03 17:00:24,461 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 17:00:24,470 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 100,
+    "title": "Book 100",
+    "description": "Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n",
+    "pageCount": 10000,
+    "excerpt": "Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n",
+    "publishDate": "2024-06-25T11:30:24.3734673+00:00"
+}
+2024-10-03 17:00:24,470 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify all books returned

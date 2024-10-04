@@ -1,0 +1,236 @@
+2024-10-03 13:44:32,991 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 13:44:35,320 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create booking with invalid booking ID and verify the error
+2024-10-03 13:44:35,320 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:44:35,320 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:44:35,320 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:44:35,320 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:44:35,321 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:44:35,321 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=109}
+2024-10-03 13:44:36,444 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2024-10-03 13:44:36,478 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+    "title": "Not Found",
+    "status": 404,
+    "traceId": "00-1e65dba962d86642b9df306d2c11bf3c-eab6466beb463f41-00"
+}
+2024-10-03 13:44:36,480 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify error is returned for invalid booking ID
+2024-10-03 13:44:36,770 INFO  [main] c.n.R.B.BaseAPITest - Step - Attempt to retrieve booking without authentication and verify the error
+2024-10-03 13:44:36,770 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:44:36,770 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:44:36,770 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:44:36,770 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:44:36,771 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:44:36,771 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1}
+2024-10-03 13:44:37,244 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 13:44:37,245 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 1,
+    "title": "Activity 1",
+    "dueDate": "2024-10-03T09:14:37.1652209+00:00",
+    "completed": false
+}
+2024-10-03 13:44:37,246 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Verify that an error is returned for unauthorized access
+2024-10-03 13:44:37,533 INFO  [main] c.n.R.B.BaseAPITest - Step - Retrieve a list of bookings when no bookings exist and verify the response
+2024-10-03 13:44:37,534 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:44:37,534 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:44:37,534 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities
+2024-10-03 13:44:37,534 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:44:37,535 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:44:37,535 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 13:44:38,032 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 13:44:38,039 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : [
+    {
+        "id": 1,
+        "title": "Activity 1",
+        "dueDate": "2024-10-03T09:14:37.9290317+00:00",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "title": "Activity 2",
+        "dueDate": "2024-10-03T10:14:37.929035+00:00",
+        "completed": true
+    },
+    {
+        "id": 3,
+        "title": "Activity 3",
+        "dueDate": "2024-10-03T11:14:37.9290353+00:00",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "title": "Activity 4",
+        "dueDate": "2024-10-03T12:14:37.9290356+00:00",
+        "completed": true
+    },
+    {
+        "id": 5,
+        "title": "Activity 5",
+        "dueDate": "2024-10-03T13:14:37.9290358+00:00",
+        "completed": false
+    },
+    {
+        "id": 6,
+        "title": "Activity 6",
+        "dueDate": "2024-10-03T14:14:37.9290365+00:00",
+        "completed": true
+    },
+    {
+        "id": 7,
+        "title": "Activity 7",
+        "dueDate": "2024-10-03T15:14:37.9290368+00:00",
+        "completed": false
+    },
+    {
+        "id": 8,
+        "title": "Activity 8",
+        "dueDate": "2024-10-03T16:14:37.9290371+00:00",
+        "completed": true
+    },
+    {
+        "id": 9,
+        "title": "Activity 9",
+        "dueDate": "2024-10-03T17:14:37.9290373+00:00",
+        "completed": false
+    },
+    {
+        "id": 10,
+        "title": "Activity 10",
+        "dueDate": "2024-10-03T18:14:37.9290379+00:00",
+        "completed": true
+    },
+    {
+        "id": 11,
+        "title": "Activity 11",
+        "dueDate": "2024-10-03T19:14:37.9290382+00:00",
+        "completed": false
+    },
+    {
+        "id": 12,
+        "title": "Activity 12",
+        "dueDate": "2024-10-03T20:14:37.9290385+00:00",
+        "completed": true
+    },
+    {
+        "id": 13,
+        "title": "Activity 13",
+        "dueDate": "2024-10-03T21:14:37.9290387+00:00",
+        "completed": false
+    },
+    {
+        "id": 14,
+        "title": "Activity 14",
+        "dueDate": "2024-10-03T22:14:37.929039+00:00",
+        "completed": true
+    },
+    {
+        "id": 15,
+        "title": "Activity 15",
+        "dueDate": "2024-10-03T23:14:37.9290393+00:00",
+        "completed": false
+    },
+    {
+        "id": 16,
+        "title": "Activity 16",
+        "dueDate": "2024-10-04T00:14:37.9290396+00:00",
+        "completed": true
+    },
+    {
+        "id": 17,
+        "title": "Activity 17",
+        "dueDate": "2024-10-04T01:14:37.9290398+00:00",
+        "completed": false
+    },
+    {
+        "id": 18,
+        "title": "Activity 18",
+        "dueDate": "2024-10-04T02:14:37.9290402+00:00",
+        "completed": true
+    },
+    {
+        "id": 19,
+        "title": "Activity 19",
+        "dueDate": "2024-10-04T03:14:37.9290405+00:00",
+        "completed": false
+    },
+    {
+        "id": 20,
+        "title": "Activity 20",
+        "dueDate": "2024-10-04T04:14:37.9290441+00:00",
+        "completed": true
+    },
+    {
+        "id": 21,
+        "title": "Activity 21",
+        "dueDate": "2024-10-04T05:14:37.9290443+00:00",
+        "completed": false
+    },
+    {
+        "id": 22,
+        "title": "Activity 22",
+        "dueDate": "2024-10-04T06:14:37.9290446+00:00",
+        "completed": true
+    },
+    {
+        "id": 23,
+        "title": "Activity 23",
+        "dueDate": "2024-10-04T07:14:37.929045+00:00",
+        "completed": false
+    },
+    {
+        "id": 24,
+        "title": "Activity 24",
+        "dueDate": "2024-10-04T08:14:37.9290452+00:00",
+        "completed": true
+    },
+    {
+        "id": 25,
+        "title": "Activity 25",
+        "dueDate": "2024-10-04T09:14:37.9290455+00:00",
+        "completed": false
+    },
+    {
+        "id": 26,
+        "title": "Activity 26",
+        "dueDate": "2024-10-04T10:14:37.9290458+00:00",
+        "completed": true
+    },
+    {
+        "id": 27,
+        "title": "Activity 27",
+        "dueDate": "2024-10-04T11:14:37.9290461+00:00",
+        "completed": false
+    },
+    {
+        "id": 28,
+        "title": "Activity 28",
+        "dueDate": "2024-10-04T12:14:37.9290463+00:00",
+        "completed": true
+    },
+    {
+        "id": 29,
+        "title": "Activity 29",
+        "dueDate": "2024-10-04T13:14:37.9290466+00:00",
+        "completed": false
+    },
+    {
+        "id": 30,
+        "title": "Activity 30",
+        "dueDate": "2024-10-04T14:14:37.9290469+00:00",
+        "completed": true
+    }
+]
+2024-10-03 13:44:38,793 INFO  [main] c.n.R.B.BaseAPITest - Step - Attempt to retrieve booking with a valid booking ID and verify the response
+2024-10-03 13:44:38,793 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 13:44:38,794 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 13:44:38,794 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Activities/{id}
+2024-10-03 13:44:38,794 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 13:44:38,794 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 13:44:38,794 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=12}
+2024-10-03 13:44:39,286 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 13:44:39,287 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 12,
+    "title": "Activity 12",
+    "dueDate": "2024-10-03T20:14:39.2050684+00:00",
+    "completed": true
+}
+2024-10-03 13:44:39,287 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify that booking is retrieved successfully

@@ -1,0 +1,73 @@
+2023-09-11 17:58:47,290 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 17:58:52,377 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:58:52,378 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 17:58:52,378 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 17:58:52,378 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=54ec4142cc8a3c6, Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:58:52,378 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:58:52,379 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234678}
+2023-09-11 17:58:52,379 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}
+2023-09-11 17:58:55,013 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:58:55,013 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:58:55,013 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:58:55,014 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:58:55,014 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:58:55,014 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 17:58:55,014 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 17:58:56,745 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 17:58:56,751 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 3716,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 17:58:58,359 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:58:58,359 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PATCH
+2023-09-11 17:58:58,360 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 17:58:58,360 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=1d042ddfa89fa3c, Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:58:58,360 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:58:58,360 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=3716}
+2023-09-11 17:58:58,361 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Edit","lastname":"Sharma"}
+2023-09-11 17:59:01,150 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:59:01,150 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 17:59:01,151 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 17:59:01,152 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:59:01,153 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:59:01,153 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 17:59:01,154 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 17:59:02,711 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 17:59:02,714 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 3764,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 17:59:04,199 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:59:04,200 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 17:59:04,200 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 17:59:04,200 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=855d7d0ffe35921, Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:59:04,200 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:59:04,201 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=3764}
+2023-09-11 17:59:04,201 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Edit","additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}
+2023-09-11 17:59:06,476 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 17:59:06,476 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : PUT
+2023-09-11 17:59:06,478 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 17:59:06,478 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2023-09-11 17:59:06,478 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 17:59:06,479 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234}
+2023-09-11 17:59:06,479 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"totalprice":111.0,"depositpaid":true,"lastname":"Sharma"}

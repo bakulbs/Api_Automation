@@ -1,0 +1,18 @@
+2024-10-03 17:01:24,607 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 17:01:26,191 INFO  [main] c.n.R.B.BaseAPITest - Create a book entry with valid id and validate
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{id}
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 17:01:26,192 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=100}
+2024-10-03 17:01:27,294 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-03 17:01:27,330 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "id": 100,
+    "title": "Book 100",
+    "description": "Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n",
+    "pageCount": 10000,
+    "excerpt": "Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n",
+    "publishDate": "2024-06-25T11:31:27.1840436+00:00"
+}
+2024-10-03 17:01:27,332 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Verify all books returned

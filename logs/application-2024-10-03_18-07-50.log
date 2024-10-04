@@ -1,0 +1,25 @@
+2024-10-03 18:07:51,434 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-03 18:07:53,037 INFO  [main] c.n.R.B.BaseAPITest - Add a book with an empty optional field (description)
+2024-10-03 18:07:53,038 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 18:07:53,038 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 18:07:53,038 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{name}
+2024-10-03 18:07:53,038 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 18:07:53,038 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 18:07:53,039 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 18:07:53,039 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{ "title": "Sample Book Title", "author": "Sample Author", "ISBN": "123-4567890123", "description": "" }
+2024-10-03 18:07:53,770 INFO  [main] c.n.R.B.BaseAPITest - Attempt to add a book with missing required fields (ISBN)
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{name}
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 18:07:53,771 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 18:07:53,772 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{ "title": "New Book Title", "author": "Author Name" }
+2024-10-03 18:07:54,071 INFO  [main] c.n.R.B.BaseAPITest - Add a new book with all required fields
+2024-10-03 18:07:54,071 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-03 18:07:54,071 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2024-10-03 18:07:54,071 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/{name}
+2024-10-03 18:07:54,072 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-03 18:07:54,072 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-03 18:07:54,072 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-03 18:07:54,073 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{ "title": "New Book Title", "author": "Author Name", "ISBN": "123-4567890123" }

@@ -1,0 +1,62 @@
+2023-09-11 20:20:56,291 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2023-09-11 20:21:02,227 INFO  [main] c.n.R.B.BaseAPITest -  Step - Call a delete booking API with invalid Booking ID
+2023-09-11 20:21:05,574 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:21:05,574 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2023-09-11 20:21:05,574 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 20:21:05,575 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=ddc4c88f4fe0efc, Content-Type=application/json}
+2023-09-11 20:21:05,610 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:21:05,610 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234567}
+2023-09-11 20:21:07,567 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 405
+2023-09-11 20:21:07,568 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Method Not Allowed
+2023-09-11 20:21:07,570 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 405
+2023-09-11 20:21:08,580 INFO  [main] c.n.R.B.BaseAPITest -  Step - Create a booking and call Delete booking API to delete that booking
+2023-09-11 20:21:08,609 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : POST
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-Type=application/json}
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2023-09-11 20:21:08,610 INFO  [main] c.n.R.B.BaseAPITest - REQUEST PAYLOAD :{"firstname":"Deepak","lastname":"Sharma","totalprice":111.0,"depositpaid":true,"additionalneeds":"Lunch","bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"}}
+2023-09-11 20:21:10,341 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2023-09-11 20:21:10,349 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : {
+    "bookingid": 114,
+    "booking": {
+        "firstname": "Deepak",
+        "lastname": "Sharma",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
+2023-09-11 20:21:11,976 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:21:11,976 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2023-09-11 20:21:11,976 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 20:21:11,976 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=84b06a1190170ae, Content-Type=application/json}
+2023-09-11 20:21:11,977 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:21:11,977 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=114}
+2023-09-11 20:21:13,671 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 201
+2023-09-11 20:21:13,672 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Created
+2023-09-11 20:21:13,673 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 201
+2023-09-11 20:21:13,673 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:21:13,673 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : GET
+2023-09-11 20:21:13,674 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 20:21:13,674 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Cookie=token=84b06a1190170ae, Content-type=application/json, Content-Type=application/json}
+2023-09-11 20:21:13,674 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:21:13,675 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=114}
+2023-09-11 20:21:15,309 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 404
+2023-09-11 20:21:15,309 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Not Found
+2023-09-11 20:21:15,310 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 404
+2023-09-11 20:21:16,542 INFO  [main] c.n.R.B.BaseAPITest -  Step - Call a delete booking API without doing authorization And verify the error
+2023-09-11 20:21:16,543 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2023-09-11 20:21:16,543 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2023-09-11 20:21:16,543 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : booking/{id}
+2023-09-11 20:21:16,543 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {}
+2023-09-11 20:21:16,544 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2023-09-11 20:21:16,544 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {id=1234}
+2023-09-11 20:21:18,201 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 403
+2023-09-11 20:21:18,202 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : Forbidden
+2023-09-11 20:21:18,203 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed -  Verify that the API returns 403
