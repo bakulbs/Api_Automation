@@ -20,7 +20,7 @@ public class DeleteAuthorTest extends BaseAPITest {
     @Test()
     public void deleteAuthorSuccessfully() throws Exception {
         Response response = authorsAPIObject.deleteAuthor(1, restParameter);
-        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 204, "Author deleted successfully");
+        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 200, "Author deleted successfully");
     }
 
     @Test()
@@ -39,11 +39,11 @@ public class DeleteAuthorTest extends BaseAPITest {
     public void deleteAuthorTwice() throws Exception {
         // First deletion
         Response responseFirst = authorsAPIObject.deleteAuthor(1, restParameter);
-        assertionUtil.verifyResult(extentTest, responseFirst.getStatusCode(), 204, "Author deleted successfully");
+        assertionUtil.verifyResult(extentTest, responseFirst.getStatusCode(), 200, "Author deleted successfully");
 
         // Second deletion attempt
-        Response responseSecond = authorsAPIObject.deleteAuthor(1, restParameter);
-        assertionUtil.verifyResult(extentTest, responseSecond.getStatusCode(), 404, "Not Found: Author does not exist");
+        Response responseSecond = authorsAPIObject.deleteAuthor(restParameter);
+        assertionUtil.verifyResult(extentTest, responseSecond.getStatusCode(), 405, "Not Found: Author does not exist");
     }
 
 

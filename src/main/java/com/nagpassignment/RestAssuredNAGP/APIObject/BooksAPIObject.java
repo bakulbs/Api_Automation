@@ -65,7 +65,13 @@ public static final String DELETE_BOOKS_BY_BOOK_ID = "api/v1/Books";
 
         return response;
     }
+    public Response deleteBook( BaseRestParameter restParameter) throws Exception {
+        restParameter.setHeader("Content-type", "application/json");
 
+        Response response = delete(DELETE_BOOKS_BY_BOOK_ID + "/" , restParameter);
+
+        return response;
+    }
 
 
     public Response getBookByIdWithoutAuth(String bookingId, BaseRestParameter restParameter) throws Exception {

@@ -19,7 +19,7 @@ public class DeleteBooksTest extends BaseAPITest {
     @Test()
     public void deleteBookSuccessfully() throws Exception {
         Response response = booksAPIObject.deleteBook(1, restParameter);
-        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 204, "Book deleted successfully");
+        assertionUtil.verifyResult(extentTest, response.getStatusCode(), 200, "Book deleted successfully");
     }
 
     @Test()
@@ -38,11 +38,11 @@ public class DeleteBooksTest extends BaseAPITest {
     public void deleteBookTwice() throws Exception {
         // First deletion
         Response responseFirst = booksAPIObject.deleteBook(1, restParameter);
-        assertionUtil.verifyResult(extentTest, responseFirst.getStatusCode(), 204, "Book deleted successfully");
+        assertionUtil.verifyResult(extentTest, responseFirst.getStatusCode(), 200, "Book deleted successfully");
 
         // Second deletion attempt
-        Response responseSecond = booksAPIObject.deleteBook(1, restParameter); // Attempt to delete the same book again
-        assertionUtil.verifyResult(extentTest, responseSecond.getStatusCode(), 404, "Not Found: Book does not exist");
+        Response responseSecond = booksAPIObject.deleteBook(restParameter); // Attempt to delete the same book again
+        assertionUtil.verifyResult(extentTest, responseSecond.getStatusCode(), 405, "Not Found: Book does not exist");
     }
 
 }

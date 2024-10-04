@@ -1,0 +1,46 @@
+2024-10-04 15:22:21,229 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 15:22:22,748 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:22:22,748 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:22:22,748 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 15:22:22,749 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:22:22,749 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:22:22,749 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:22:23,906 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:22:23,915 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:22:23,916 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Book deleted successfully
+2024-10-04 15:22:24,191 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:22:24,191 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:22:24,191 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 15:22:24,191 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:22:24,191 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:22:24,192 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:22:24,661 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:22:24,661 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:22:24,662 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Book deleted successfully
+2024-10-04 15:22:24,664 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:22:24,664 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:22:24,664 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/1
+2024-10-04 15:22:24,664 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:22:24,665 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:22:24,665 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:22:25,167 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:22:25,169 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:22:25,169 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Book does not exist
+2024-10-04 15:22:25,442 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:22:25,442 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:22:25,442 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/-1
+2024-10-04 15:22:25,443 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:22:25,443 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:22:25,443 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:22:25,917 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:22:25,918 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:22:25,918 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Bad Request: Invalid book ID
+2024-10-04 15:22:26,192 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:22:26,192 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:22:26,193 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Books/999
+2024-10-04 15:22:26,193 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:22:26,193 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:22:26,193 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:22:26,656 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:22:26,656 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:22:26,656 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Book does not exist

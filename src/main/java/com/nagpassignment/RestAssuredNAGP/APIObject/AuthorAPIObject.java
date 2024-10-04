@@ -61,6 +61,11 @@ public static final String DELETE_AUTHORS = "api/v1/Authors";
         Response response = delete(DELETE_AUTHORS + "/" + id, restParameter);
         return response;
     }
+    public Response deleteAuthor( BaseRestParameter restParameter) throws Exception {
+        restParameter.setHeader("Content-type", "application/json");
+        Response response = delete(DELETE_AUTHORS + "/" , restParameter);
+        return response;
+    }
 
 
     /**

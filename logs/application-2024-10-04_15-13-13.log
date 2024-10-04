@@ -1,0 +1,46 @@
+2024-10-04 15:13:14,276 INFO  [main] c.n.R.B.BaseAPITest - Extent Report Initialized successfully
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/1
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:13:16,077 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:13:17,392 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:13:17,402 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:13:17,404 INFO  [main] c.n.R.B.BaseAPITest - Assertion Passed - Author deleted successfully
+2024-10-04 15:13:17,693 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:13:17,693 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:13:17,693 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/1
+2024-10-04 15:13:17,693 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:13:17,695 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:13:17,695 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:13:18,171 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:13:18,171 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:13:18,172 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Author deleted successfully
+2024-10-04 15:13:18,175 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:13:18,176 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:13:18,176 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/1
+2024-10-04 15:13:18,176 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:13:18,177 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:13:18,178 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:13:18,637 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:13:18,638 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:13:18,638 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Author does not exist
+2024-10-04 15:13:18,927 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:13:18,928 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:13:18,928 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/-1
+2024-10-04 15:13:18,928 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:13:18,928 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:13:18,928 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:13:19,398 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:13:19,399 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:13:19,399 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Bad Request: Invalid author ID
+2024-10-04 15:13:19,686 INFO  [main] c.n.R.B.BaseAPITest - REQUEST INFO
+2024-10-04 15:13:19,686 INFO  [main] c.n.R.B.BaseAPITest - HTTP METHOD : DELETE
+2024-10-04 15:13:19,687 INFO  [main] c.n.R.B.BaseAPITest - ENDPOINT : api/v1/Authors/999
+2024-10-04 15:13:19,687 INFO  [main] c.n.R.B.BaseAPITest - HEADERS : {Content-type=application/json, Content-Type=application/json}
+2024-10-04 15:13:19,687 INFO  [main] c.n.R.B.BaseAPITest - QUERY PARAMS : {}
+2024-10-04 15:13:19,687 INFO  [main] c.n.R.B.BaseAPITest - PATH PARAMS : {}
+2024-10-04 15:13:20,156 INFO  [main] c.n.R.B.BaseAPITest - STATUS CODE: 200
+2024-10-04 15:13:20,156 INFO  [main] c.n.R.B.BaseAPITest - RESPONSE PAYLOAD : 
+2024-10-04 15:13:20,156 INFO  [main] c.n.R.B.BaseAPITest - Assertion Failed - Not Found: Author does not exist
